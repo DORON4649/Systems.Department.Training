@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>第3回課題</title>
+    </head>
+
+    <body>
+        <form action="#" method="post">
+            <h1>アンケート</h1>
+            <label>氏名 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</label><input type="text" name="name" required><br>
+            <label>フリガナ：</label><input type="text" name="kana" required>
+                <br><br>  
+            <label for="grade">学年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</label>
+                <select id="grade" name="grade">
+                    <option value="">選択してください</option>
+                    <option value="1年">1年生</option>
+                    <option value="2年">2年生</option>
+                    <option value="3年">3年生</option>
+                    <option value="4年">4年生</option>
+                </select>
+                <br><br>
+            <label>学部学科：</label>
+            <input type="text" name="department" required>
+                <br>
+            <label>学籍番号：</label>
+            <input type="text" name="student_id" required>
+                <br><br>
+            <label>性別：</label>
+            <input type="radio" name="gender" value="male" required>男性
+            <input type="radio" name="gender" value="female" required>女性
+            <input type="radio" name="gender" value="other" required>その他
+                <br><br>
+            <label>出身都道府県：</label>
+                <select id="prefectures" name="prefectures">
+                    <option value="">選択してください</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <!-- 中略 -->
+                    <option value="東京都">東京都</option>
+                    <!-- 中略 -->
+                    <option value="沖縄県">沖縄県</option>
+                </select>
+
+            <br><br>
+            <button type="submit">送信</button>
+        </form>
+    </body>
+</html>
